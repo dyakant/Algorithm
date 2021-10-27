@@ -55,22 +55,22 @@ public class Exercise1 {
 
     @Test
     public void testCalculations() {
-        int[] exp = new int[]{1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 10};
+        int[] exp = new int[]{1, 2, 3, 4, 5, 5, 6, 6, 7, 8, 9, 10};
 
         int[] a1 = {1, 5, 7, 8, 10};
-        int[] a2 = {2, 3, 4, 5, 6, 9};
+        int[] a2 = {2, 3, 4, 5, 6, 6, 9};
         assertArrayEquals(exp, mergeArrays(a1, a2));
 
         a1 = new int[]{1, 5, 7, 8, 10};
-        a2 = new int[]{9, 6, 5, 4, 3, 2};
+        a2 = new int[]{9, 6, 6, 5, 4, 3, 2};
         assertArrayEquals(exp, mergeArrays(a1, a2));
 
         a1 = new int[]{10, 8, 7, 5, 1};
-        a2 = new int[]{2, 3, 4, 5, 6, 9};
+        a2 = new int[]{2, 3, 4, 5, 6, 6, 9};
         assertArrayEquals(exp, mergeArrays(a1, a2));
 
         a1 = new int[]{10, 8, 7, 5, 1};
-        a2 = new int[]{9, 6, 5, 4, 3, 2};
+        a2 = new int[]{9, 6, 6, 5, 4, 3, 2};
         assertArrayEquals(exp, mergeArrays(a1, a2));
     }
 }
